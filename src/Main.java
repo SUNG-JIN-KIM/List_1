@@ -1,4 +1,5 @@
 import java.util.*;
+
 class a{
     String b = "=";
 
@@ -7,8 +8,10 @@ class a{
         for(int i = 0; i < 45; i++){
             System.out.print(b);
         }
+        System.out.println();
     }
 }
+
 public class Main {
     public static void main(String[] args) {
         a a = new a();
@@ -16,7 +19,7 @@ public class Main {
 
         List<String> fruits = new ArrayList<>();
 
-        fruits.add("\nApple");
+        fruits.add("Apple");
         fruits.add("Banana");
         fruits.add("Casada Melon");
         fruits.add("Dates");
@@ -25,6 +28,8 @@ public class Main {
         fruits.add("Rambutan");
         fruits.add("Pineapple");
         fruits.add("Kiwi");
+
+        Collections.sort(fruits);
 
         for(int i = 0; i < fruits.size(); i++){
             System.out.println(fruits.get(i));
@@ -35,5 +40,8 @@ public class Main {
         for(String fruist : fruits){
             System.out.println(fruist);
         }
+
+
+
     }
 }
